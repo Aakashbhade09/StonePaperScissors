@@ -7,6 +7,8 @@ const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
 
+let newGameBtn = document.querySelector("#new");
+
 const genCompChoice = () => {
   const options = ["rock", "paper", "scissors"];
   const randIdx = Math.floor(Math.random() * 3);
@@ -60,4 +62,16 @@ choices.forEach((choice) => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);
   });
+});
+
+
+newGameBtn.addEventListener("click", () => {
+    userScore = 0;
+    compScore = 0;
+
+    userScorePara.innerText = userScore;
+    compScorePara.innerText = compScore;
+
+    msg.innerText = "Start a new game!";
+    msg.style.backgroundColor = "#081b31";
 });

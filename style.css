@@ -37,7 +37,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .score-board {
@@ -45,7 +45,7 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 5rem;
 }
 
@@ -55,7 +55,7 @@ img {
 }
 
 .msg-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 #msg {
@@ -65,4 +65,18 @@ img {
   display: inline;
   padding: 1rem;
   border-radius: 1rem;
+}
+
+
+#new {
+  background-color: black;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.newgame{
+    margin-top: 3rem;
 }
